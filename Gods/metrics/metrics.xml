@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics
+    xmlns="http://eclipse-metrics.sourceforge.net"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://eclipse-metrics.sourceforge.net metrics.xsd"
+    >
+  <configuration metric="CC" fullname="Cyclomatic Complexity">
+    <option name="countCaseStatements" value="true"/>
+    <option name="countCatchClauses" value="true"/>
+    <option name="countTernaryOperators" value="true"/>
+  </configuration>
+  <configuration metric="WMC" fullname="Weighted Methods Per Class">
+    <option name="countCaseStatements" value="true"/>
+    <option name="countCatchClauses" value="true"/>
+    <option name="countTernaryOperators" value="true"/>
+  </configuration>
+  <configuration metric="FE" fullname="Feature Envy">
+    <option name="envySourceTypesOnly" value="true"/>
+    <option name="envySuperclass" value="true"/>
+  </configuration>
+  <configuration metric="LCOMCK" fullname="Lack of Cohesion in Methods (Chidamber &amp; Kemerer)">
+  </configuration>
+  <configuration metric="LCOMHS" fullname="Lack of Cohesion in Methods (Henderson-Sellers)">
+  </configuration>
+  <configuration metric="LCOMPFI" fullname="Lack of Cohesion in Methods (Pairwise Field Irrelation)">
+  </configuration>
+  <configuration metric="LCOMTC" fullname="Lack of Cohesion in Methods (Total Correlation)">
+  </configuration>
+  <configuration metric="LOCm" fullname="Lines of Code in Method">
+    <option name="ignoreBlanks" value="false"/>
+    <option name="includeComments" value="true"/>
+  </configuration>
+  <configuration metric="NOP" fullname="Number of Parameters">
+    <option name="includeSupertypeMethods" value="true"/>
+  </configuration>
+  <configuration metric="Ce" fullname="Efferent Couplings">
+  </configuration>
+  <configuration metric="NOF" fullname="Number of Fields">
+  </configuration>
+  <configuration metric="NOL" fullname="Number of Levels">
+  </configuration>
+  <configuration metric="NLS" fullname="Number of Locals in Scope">
+  </configuration>
+  <configuration metric="NOS" fullname="Number of Statements">
+  </configuration>
+  <package name="me.elsifo92.gods">
+    <type name="GodsCraft" line="45" WMC="27" LCOMCK="0" Ce="19" LCOMTC="507" NOF="9" LCOMPFI="44" LCOMHS="86">
+      <method name="getObjective" line="69" LOCm="4" NOP="0" CC="1" FE="0" NOS="1" NLS="0" NOL="1"/>
+      <method name="getScoreboard" line="73" LOCm="4" NLS="0" NOP="0" NOL="1" CC="1" NOS="1" FE="0"/>
+      <method name="isLocked" line="56" NLS="0" NOL="1" NOS="1" LOCm="4" FE="0" CC="1" NOP="0"/>
+      <method name="load" line="90" FE="0" NOS="96" NLS="3" NOL="3" NOP="0" CC="14" LOCm="69"/>
+      <method name="lock" line="179" CC="1" NLS="0" FE="0" NOL="1" NOP="0" NOS="13" LOCm="10"/>
+      <method name="onDisable" line="64" NOS="3" NOP="0" NOL="2" FE="0" NLS="0" LOCm="5" CC="2"/>
+      <method name="onEnable" line="60" LOCm="4" NOS="1" CC="1" NOP="0" NLS="0" NOL="1" FE="0"/>
+      <method name="reload" line="77" NLS="0" NOL="2" LOCm="13" NOP="1" NOS="14" CC="2" FE="0"/>
+      <method name="save" line="159" NOL="3" LOCm="20" FE="3" NLS="0" NOP="0" NOS="19" CC="4"/>
+    </type>
+    <type name="Lang" line="3" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="Lang.E" line="5" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="Lang.F" line="7" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="Lang.G" line="8" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="Lang.I" line="6" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="ParticleEffects" line="9" WMC="2" NOF="1" LCOMCK="0" Ce="9" LCOMHS="0" LCOMPFI="0" LCOMTC="0">
+      <method name="ParticleEffects" line="48" NOL="1" LOCm="4" NLS="0" FE="0" CC="1" NOP="1" NOS="1"/>
+      <method name="sendToPlayer" line="53" FE="0" NOS="15" NOP="7" LOCm="14" NLS="0" NOL="1" CC="1"/>
+    </type>
+    <type name="ParticleEffects.ANGRY_VILLAGER" line="42" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="ParticleEffects.BUBBLE" line="14" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="ParticleEffects.CLOUD" line="34" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ParticleEffects.CRIT" line="18" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="ParticleEffects.DEPTH_SUSPEND" line="16" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ParticleEffects.DRIP_LAVA" line="38" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="ParticleEffects.DRIP_WATER" line="37" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.ENCHANTMENT_TABLE" line="27" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ParticleEffects.EXPLODE" line="28" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="ParticleEffects.FIREWORKS_SPARK" line="13" NOF="0" WMC="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.FLAME" line="29" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.FOOTSTEP" line="31" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="ParticleEffects.HAPPY_VILLAGER" line="43" NOF="0" WMC="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.HEART" line="41" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.HUGE_EXPLOSION" line="11" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="ParticleEffects.INSTANT_SPELL" line="23" NOF="0" WMC="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.LARGE_EXPLODE" line="12" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ParticleEffects.LARGE_SMOKE" line="33" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="ParticleEffects.LAVA" line="30" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ParticleEffects.MAGIC_CRIT" line="19" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="ParticleEffects.MOB_SPELL" line="20" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ParticleEffects.MOB_SPELL_AMBIENT" line="21" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.NOTE" line="25" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="ParticleEffects.PORTAL" line="26" NOF="0" WMC="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.RED_DUST" line="35" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ParticleEffects.SLIME" line="40" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="ParticleEffects.SNOWBALL_POOF" line="36" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.SNOW_SHOVEL" line="39" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="ParticleEffects.SPELL" line="22" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="ParticleEffects.SPLASH" line="32" NOF="0" WMC="0" Ce="1">
+    </type>
+    <type name="ParticleEffects.SUSPEND" line="15" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="ParticleEffects.TOWN_AURA" line="17" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="ParticleEffects.WITCH_MAGIC" line="24" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="ParticleTask" line="8" LCOMPFI="0" Ce="7" LCOMTC="0" WMC="3" NOF="8" LCOMHS="0" LCOMCK="0">
+      <method name="ParticleTask" line="19" FE="0" NOP="8" NOS="8" LOCm="11" NLS="0" CC="1" NOL="1"/>
+      <method name="run" line="30" NOS="6" LOCm="14" CC="2" NLS="1" NOL="2" FE="0" NOP="0"/>
+    </type>
+    <type name="ReflectionUtilities" line="5" WMC="2" Ce="4" NOF="0">
+      <method name="getValue" line="13" CC="1" NLS="0" NOL="1" NOS="6" LOCm="6" NOP="2"/>
+      <method name="setValue" line="7" CC="1" NOP="3" NOS="5" NOL="1" LOCm="6" NLS="0"/>
+    </type>
+    <type name="Reputation" line="3" Ce="2" WMC="1" NOF="0">
+      <method name="getPointsTo" line="6" NOP="1" NLS="0" LOCm="4" NOS="2" CC="1" NOL="1"/>
+    </type>
+    <type name="Utility" line="22" Ce="12" NOF="0" WMC="28">
+      <method name="daysFromToday" line="95" NOL="1" NOP="1" CC="1" NOS="4" NLS="0" LOCm="4"/>
+      <method name="formattedMessage" line="26" LOCm="4" NOL="1" NLS="0" NOP="1" CC="1" NOS="1"/>
+      <method name="getDBNumberFromGodType" line="83" NOL="2" CC="6" NLS="0" NOP="1" LOCm="12" NOS="10"/>
+      <method name="getGodTypeFromDBNumber" line="72" NOL="2" LOCm="11" CC="6" NOP="1" NLS="0" NOS="10"/>
+      <method name="getItem" line="30" CC="4" NOL="4" NOP="1" NLS="0" NOS="34" LOCm="26"/>
+      <method name="getMessage" line="99" NOS="2" LOCm="4" NOL="1" NLS="0" NOP="1" CC="1"/>
+      <method name="getStringArray" line="103" LOCm="17" NOL="3" NOP="2" CC="3" NLS="0" NOS="13"/>
+      <method name="sendPermissionMessage" line="68" NOS="1" NOP="1" LOCm="4" CC="1" NOL="1" NLS="0"/>
+      <method name="setLang" line="56" NOS="18" NOP="1" CC="5" NLS="0" NOL="2" LOCm="12"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.command">
+    <type name="CommandHandler" line="27" LCOMCK="0" NOF="1" LCOMTC="0" Ce="13" LCOMPFI="0" LCOMHS="0" WMC="54">
+      <method name="CommandHandler" line="30" FE="0" NOP="1" NOL="1" NLS="0" NOS="1" LOCm="4" CC="1"/>
+      <method name="onCommand" line="34" NOS="195" LOCm="219" NOP="4" NOL="9" NLS="0" CC="53" FE="5"/>
+    </type>
+    <type name="FailsafeHandler" line="14" LCOMHS="0" Ce="9" NOF="1" LCOMCK="0" LCOMPFI="0" WMC="10" LCOMTC="0">
+      <method name="FailsafeHandler" line="17" LOCm="4" NOP="1" CC="1" NOS="1" NOL="1" NLS="0" FE="0"/>
+      <method name="onCommand" line="21" NLS="0" FE="2" NOP="4" LOCm="40" CC="9" NOL="6" NOS="26"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.data.blocks">
+    <type name="BlockManager" line="12" Ce="12" NOF="0" WMC="12">
+      <method name="blockPlaced" line="34" LOCm="4" NOS="4" NOL="1" NLS="0" CC="1" NOP="1"/>
+      <method name="getPlacedBlock" line="15" LOCm="5" NOL="2" NLS="0" CC="2" NOS="7" NOP="1"/>
+      <method name="getPlacedBlocksIterator" line="38" LOCm="4" NLS="0" NOP="0" CC="1" NOS="2" NOL="1"/>
+      <method name="isNatural" line="25" NOP="1" LOCm="5" NLS="0" NOL="2" NOS="5" CC="2"/>
+      <method name="loadBlock" line="30" NOS="3" CC="1" LOCm="4" NLS="0" NOP="3" NOL="1"/>
+      <method name="mark" line="20" NOS="4" NOL="2" LOCm="5" NLS="0" CC="2" NOP="1"/>
+      <method name="setMaterial" line="47" LOCm="6" NOL="1" NOP="3" NOS="4" CC="1" NLS="0"/>
+      <method name="verifyBlock" line="42" NLS="0" LOCm="5" NOS="5" CC="2" NOP="1" NOL="2"/>
+    </type>
+    <type name="PlacedBlock" line="8" LCOMPFI="71" LCOMTC="150" WMC="8" LCOMCK="3" Ce="7" LCOMHS="75" NOF="4">
+      <method name="PlacedBlock" line="14" NOS="4" NLS="0" CC="1" LOCm="7" NOL="1" FE="0" NOP="3"/>
+      <method name="getBlock" line="33" CC="1" NOP="0" FE="0" NOS="2" NLS="0" LOCm="4" NOL="1"/>
+      <method name="getDayPlaced" line="29" CC="1" NOP="0" NOL="1" NOS="1" LOCm="4" FE="0" NLS="0"/>
+      <method name="getIdDB" line="41" NOP="0" NLS="0" NOS="1" NOL="1" CC="1" LOCm="4" FE="0"/>
+      <method name="isInDB" line="21" FE="0" NOL="1" LOCm="4" NLS="0" CC="1" NOS="1" NOP="0"/>
+      <method name="isMarked" line="37" NOS="1" NOP="0" LOCm="4" NLS="0" CC="1" FE="0" NOL="1"/>
+      <method name="mark" line="25" NOP="0" NLS="0" NOS="1" CC="1" FE="0" NOL="1" LOCm="4"/>
+      <method name="toString" line="45" NOS="5" NOL="1" NLS="0" NOP="0" FE="0" CC="1" LOCm="6"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.data.config">
+    <type name="ConfigManager" line="20" WMC="22" Ce="15" NOF="0">
+      <method name="checkVersion" line="97" CC="1" NOP="0" NOL="1" LOCm="4" NLS="0" NOS="0"/>
+      <method name="getGodConfig" line="38" CC="7" NOS="24" NOP="1" NOL="2" LOCm="18" NLS="0"/>
+      <method name="getItemStackList" line="56" NOP="1" NOL="2" NOS="25" LOCm="20" NLS="0" CC="7"/>
+      <method name="getLang" line="93" LOCm="4" NOL="1" NLS="0" CC="1" NOP="0" NOS="1"/>
+      <method name="getMySQLConfig" line="80" LOCm="4" NOP="0" NOL="1" CC="1" NOS="1" NLS="0"/>
+      <method name="getPexConfig" line="76" NLS="0" CC="1" NOP="0" NOL="1" NOS="1" LOCm="4"/>
+      <method name="isConnectedToDB" line="27" NOP="0" CC="2" LOCm="11" NOL="2" FE="0" NLS="1" NOS="5"/>
+      <method name="isSoundEnabled" line="89" NOL="1" NLS="0" NOP="0" LOCm="4" CC="1" NOS="1"/>
+      <method name="reloadConfig" line="84" NOL="1" NOS="10" NOP="0" LOCm="5" NLS="0" CC="1"/>
+    </type>
+    <type name="GodConfig" line="8" NOF="4" LCOMPFI="100" WMC="6" LCOMTC="121" Ce="7" LCOMCK="8" LCOMHS="94">
+      <method name="GodConfig" line="14" NOP="4" FE="0" NLS="0" NOS="4" CC="1" LOCm="7" NOL="1"/>
+      <method name="getCap" line="25" NOP="0" CC="1" NOL="1" FE="0" NLS="0" LOCm="4" NOS="1"/>
+      <method name="getChamp" line="33" NOS="1" FE="0" NOL="1" LOCm="4" CC="1" NOP="0" NLS="0"/>
+      <method name="getItemsList" line="29" LOCm="4" NOS="1" NLS="0" NOL="1" NOP="0" CC="1" FE="0"/>
+      <method name="getName" line="21" CC="1" FE="0" NOS="1" NOP="0" LOCm="4" NOL="1" NLS="0"/>
+      <method name="hasItemList" line="37" FE="0" LOCm="4" NLS="0" CC="1" NOP="0" NOS="1" NOL="1"/>
+    </type>
+    <type name="MySQLConfig" line="8" LCOMPFI="70" Ce="5" WMC="5" LCOMCK="4" LCOMTC="306" NOF="7" LCOMHS="94">
+      <method name="MySQLConfig" line="17" FE="0" CC="1" NOS="6" LOCm="9" NLS="0" NOP="5" NOL="1"/>
+      <method name="getChar" line="38" FE="0" NOL="1" NOP="0" NLS="0" NOS="1" CC="1" LOCm="4"/>
+      <method name="getConnection" line="26" FE="0" NOL="2" CC="2" NOS="4" NLS="0" LOCm="8" NOP="0"/>
+      <method name="getDBName" line="34" NOL="1" FE="0" NOS="1" LOCm="4" NLS="0" NOP="0" CC="1"/>
+    </type>
+    <type name="PEXControl" line="7" Ce="4" NOF="0" WMC="3">
+      <method name="PEXControl" line="9" FE="0" CC="1" LOCm="4" NLS="0" NOL="1" NOP="0" NOS="0"/>
+      <method name="hasPerm" line="13" NOS="7" FE="0" NLS="0" CC="2" LOCm="5" NOP="2" NOL="2"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.data.database">
+    <type name="DatabaseException" line="3" LCOMTC="0" LCOMHS="0" NOF="1" Ce="3" LCOMCK="0" LCOMPFI="0" WMC="2">
+      <method name="DatabaseException" line="12" NOL="1" CC="1" NOP="2" NLS="0" NOS="2" FE="0" LOCm="5"/>
+      <method name="getType" line="17" NLS="0" FE="0" NOL="1" NOS="1" NOP="0" LOCm="4" CC="1"/>
+    </type>
+    <type name="DatabaseException.DatabaseExceptionType" line="5" NOF="0" WMC="0" Ce="1">
+    </type>
+    <type name="DatabaseException.DatabaseExceptionType.CONNECTION" line="7" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="DatabaseException.DatabaseExceptionType.NOT_COMPLETE" line="9" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="DatabaseException.DatabaseExceptionType.NOT_FOUND" line="8" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="DatabaseManager" line="37" Ce="34" NOF="0" WMC="90">
+      <method name="connectToDB" line="544" CC="2" NOS="4" LOCm="11" NOL="2" NLS="1" NOP="0"/>
+      <method name="createDatabase" line="497" NLS="0" NOL="2" NOS="15" CC="2" LOCm="18" NOP="1"/>
+      <method name="getChamp" line="40" NOP="1" NOL="4" NOS="22" NLS="4" LOCm="29" CC="5"/>
+      <method name="getFollower" line="98" NOS="40" NOP="1" CC="7" NLS="8" NOL="4" LOCm="31"/>
+      <method name="getTopFollowers" line="515" LOCm="25" NLS="3" NOL="3" NOS="18" NOP="1" CC="4"/>
+      <method name="loadAltars" line="179" LOCm="26" NOL="4" CC="5" NLS="2" NOP="0" NOS="27"/>
+      <method name="loadBlocks" line="206" CC="4" NOL="3" NLS="3" LOCm="25" NOP="1" NOS="24"/>
+      <method name="loadChamps" line="273" LOCm="45" NOP="0" NOL="6" NLS="9" CC="8" NOS="34"/>
+      <method name="loadThrones" line="232" NOL="6" NOS="50" NLS="7" NOP="0" CC="8" LOCm="40"/>
+      <method name="saveAltars" line="394" NOL="6" CC="7" NLS="7" NOP="0" LOCm="38" NOS="44"/>
+      <method name="saveBlocks" line="433" LOCm="64" NLS="8" CC="12" NOS="64" NOL="6" NOP="1"/>
+      <method name="saveFollower" line="135" NOS="41" LOCm="43" CC="6" NLS="7" NOL="4" NOP="6"/>
+      <method name="saveThrones" line="319" CC="11" LOCm="74" NOS="66" NLS="8" NOL="6" NOP="0"/>
+      <method name="setChamp" line="130" NOS="4" NOL="1" LOCm="4" NLS="0" NOP="2" CC="2"/>
+      <method name="setPriest" line="555" NLS="0" NOL="1" NOP="2" LOCm="4" CC="1" NOS="3"/>
+      <method name="testDB" line="69" NOP="0" CC="5" NOL="3" NOS="23" NLS="3" LOCm="29"/>
+      <method name="updateReputationLevel" line="540" NOP="2" NOS="2" NLS="0" LOCm="4" CC="1" NOL="1"/>
+    </type>
+    <type name="FollowerData" line="7" LCOMPFI="100" WMC="10" LCOMHS="100" Ce="5" LCOMTC="132" NOF="6" LCOMCK="15">
+      <method name="FollowerData" line="15" NOP="6" FE="0" LOCm="8" NLS="0" NOL="1" CC="1" NOS="5"/>
+      <method name="addReputation" line="43" LOCm="4" NLS="0" CC="1" NOS="1" NOL="1" NOP="1" FE="0"/>
+      <method name="getGod" line="55" CC="1" NOL="1" NOS="1" NLS="0" LOCm="4" FE="0" NOP="0"/>
+      <method name="getLastHealed" line="51" NOP="0" LOCm="4" FE="0" CC="1" NOS="1" NLS="0" NOL="1"/>
+      <method name="getLastPrayed" line="31" NOP="0" NOL="1" FE="0" CC="1" LOCm="4" NOS="1" NLS="0"/>
+      <method name="getPoints" line="39" NOS="1" CC="1" LOCm="4" NOL="1" FE="0" NOP="0" NLS="0"/>
+      <method name="getReputation" line="35" LOCm="4" NOP="0" NOL="1" FE="0" NLS="0" NOS="1" CC="1"/>
+      <method name="isLoggingIn" line="27" LOCm="4" NLS="0" FE="0" CC="1" NOP="0" NOL="1" NOS="1"/>
+      <method name="setLastHealed" line="47" NOP="1" FE="0" NLS="0" NOS="1" LOCm="4" CC="1" NOL="1"/>
+      <method name="setLastPrayed" line="23" NOS="1" CC="1" LOCm="4" NOP="1" NOL="1" NLS="0" FE="0"/>
+    </type>
+    <type name="SQLQuery" line="13" LCOMHS="0" NOF="2" LCOMPFI="0" LCOMTC="0" WMC="6" LCOMCK="0" Ce="7">
+      <method name="SQLQuery" line="17" NOL="1" CC="1" FE="0" NOP="2" NLS="0" NOS="4" LOCm="5"/>
+      <method name="excecuteQuery" line="22" LOCm="19" NLS="3" NOP="0" CC="3" NOL="2" FE="0" NOS="12"/>
+      <method name="excecuteUpdate" line="41" NLS="2" FE="0" NOS="7" NOP="0" NOL="2" LOCm="12" CC="2"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.data.scoreboard">
+    <type name="ScoreType" line="3" Ce="1" NOF="0" WMC="0">
+    </type>
+    <type name="ScoreType.REPUTATION" line="5" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="ScoreType.TOP" line="6" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="ScoreboardManager" line="22" WMC="20" Ce="17" NOF="0">
+      <method name="getInstance" line="27" NOL="2" NOS="3" LOCm="5" NOP="0" NLS="0" CC="2"/>
+      <method name="hideScoreboard" line="102" LOCm="4" NOP="1" NOS="3" NOL="1" NLS="0" CC="1"/>
+      <method name="loadGod" line="32" NLS="0" NOP="1" LOCm="8" NOS="7" NOL="2" CC="2"/>
+      <method name="newPlayer" line="57" CC="1" NOP="1" LOCm="7" NOL="1" NOS="7" NLS="0"/>
+      <method name="showScoreboard" line="78" NOL="1" LOCm="4" NOS="3" NLS="0" NOP="1" CC="1"/>
+      <method name="showTopScoreboard" line="82" NLS="0" NOP="2" NOS="26" CC="3" NOL="2" LOCm="20"/>
+      <method name="updateScore" line="64" NOL="1" LOCm="14" NOS="25" NLS="0" NOP="2" CC="1"/>
+      <method name="updateTop" line="40" NLS="0" NOP="3" NOS="25" LOCm="17" NOL="3" CC="9"/>
+    </type>
+    <type name="UpdateTop" line="5" NOF="3" WMC="2" LCOMPFI="0" LCOMCK="0" LCOMHS="0" LCOMTC="0" Ce="5">
+      <method name="UpdateTop" line="10" NOL="1" CC="1" FE="0" NOS="3" NOP="3" NLS="0" LOCm="6"/>
+      <method name="run" line="16" NOL="1" NLS="0" CC="1" FE="0" LOCm="5" NOS="1" NOP="0"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.events">
+    <type name="GiftedEvent" line="10" NOF="3" LCOMCK="3" WMC="6" Ce="5" LCOMHS="100" LCOMTC="117" LCOMPFI="100">
+      <method name="GiftedEvent" line="16" NOL="1" FE="0" NLS="0" NOP="3" CC="1" LOCm="6" NOS="3"/>
+      <method name="getGod" line="22" CC="1" FE="0" NOP="0" NLS="0" LOCm="4" NOL="1" NOS="1"/>
+      <method name="getHandlerList" line="38" CC="1" NOS="1" NOL="1" NOP="0" NLS="0" LOCm="4"/>
+      <method name="getHandlers" line="34" CC="1" NOL="1" NLS="0" FE="0" NOS="1" NOP="0" LOCm="4"/>
+      <method name="getItem" line="26" NOL="1" CC="1" NLS="0" FE="0" NOP="0" LOCm="4" NOS="1"/>
+      <method name="getPlayer" line="30" CC="1" NLS="0" LOCm="4" NOS="1" NOL="1" FE="0" NOP="0"/>
+    </type>
+    <type name="GodPowerActivatedEvent" line="9" LCOMTC="100" LCOMHS="100" WMC="5" LCOMPFI="100" Ce="4" LCOMCK="1" NOF="2">
+      <method name="GodPowerActivatedEvent" line="14" LOCm="5" FE="0" NOS="2" NLS="0" NOP="2" NOL="1" CC="1"/>
+      <method name="getGod" line="19" FE="0" LOCm="4" NOL="1" NLS="0" CC="1" NOS="1" NOP="0"/>
+      <method name="getHandlerList" line="31" CC="1" NLS="0" LOCm="4" NOS="1" NOP="0" NOL="1"/>
+      <method name="getHandlers" line="27" NLS="0" NOP="0" CC="1" NOL="1" LOCm="4" FE="0" NOS="1"/>
+      <method name="getPlayer" line="23" LOCm="4" NOP="0" NOL="1" FE="0" CC="1" NOS="1" NLS="0"/>
+    </type>
+    <type name="GodPrayedEvent" line="9" WMC="5" LCOMPFI="100" LCOMHS="100" LCOMCK="1" NOF="2" Ce="4" LCOMTC="100">
+      <method name="GodPrayedEvent" line="14" LOCm="5" NOL="1" FE="0" NOP="2" CC="1" NLS="0" NOS="2"/>
+      <method name="getGodName" line="19" LOCm="4" NOL="1" FE="0" NOS="1" NOP="0" NLS="0" CC="1"/>
+      <method name="getHandlerList" line="31" NOL="1" NOP="0" NLS="0" LOCm="4" CC="1" NOS="1"/>
+      <method name="getHandlers" line="27" NOP="0" FE="0" LOCm="4" NOS="1" NOL="1" CC="1" NLS="0"/>
+      <method name="getPlayer" line="23" NLS="0" CC="1" FE="0" LOCm="4" NOS="1" NOP="0" NOL="1"/>
+    </type>
+    <type name="HealedByGodEvent" line="9" NOF="3" Ce="5" LCOMTC="117" WMC="7" LCOMHS="100" LCOMPFI="100" LCOMCK="3">
+      <method name="HealedByGodEvent" line="24" LOCm="6" NOL="1" NOS="3" NLS="0" FE="0" CC="1" NOP="2"/>
+      <method name="getGod" line="34" CC="1" LOCm="4" NOL="1" NOS="1" NOP="0" FE="0" NLS="0"/>
+      <method name="getHandlerList" line="20" NOL="1" LOCm="4" NOP="0" NOS="1" CC="1" NLS="0"/>
+      <method name="getHandlers" line="15" NLS="0" NOL="1" LOCm="5" NOP="0" FE="0" NOS="1" CC="1"/>
+      <method name="getPlayer" line="30" NOS="1" LOCm="4" NLS="0" NOP="0" NOL="1" CC="1" FE="0"/>
+      <method name="isCancelled" line="42" FE="0" NOL="1" CC="1" NLS="0" LOCm="4" NOP="0" NOS="1"/>
+      <method name="setCancelled" line="38" NLS="0" NOL="1" NOP="0" NOS="1" LOCm="4" FE="0" CC="1"/>
+    </type>
+    <type name="LevelUpEvent" line="9" NOF="3" LCOMTC="117" Ce="5" LCOMHS="100" WMC="6" LCOMCK="3" LCOMPFI="100">
+      <method name="LevelUpEvent" line="15" NOP="3" NOL="1" NOS="3" NLS="0" FE="0" CC="1" LOCm="6"/>
+      <method name="getGod" line="21" NOS="1" NLS="0" NOP="0" LOCm="4" NOL="1" CC="1" FE="0"/>
+      <method name="getHandlerList" line="36" NLS="0" LOCm="3" NOP="0" NOS="1" NOL="1" CC="1"/>
+      <method name="getHandlers" line="33" CC="1" NOS="1" LOCm="3" FE="0" NOL="1" NLS="0" NOP="0"/>
+      <method name="getLevel" line="25" LOCm="4" FE="0" CC="1" NOP="0" NOL="1" NOS="1" NLS="0"/>
+      <method name="getPlayer" line="29" NOS="1" NOL="1" NLS="0" CC="1" LOCm="4" FE="0" NOP="0"/>
+    </type>
+    <type name="NewChampEvent" line="9" NOF="2" LCOMCK="1" LCOMPFI="100" LCOMHS="100" Ce="4" LCOMTC="100" WMC="5">
+      <method name="NewChampEvent" line="14" NLS="0" NOL="1" FE="0" NOS="2" NOP="2" LOCm="5" CC="1"/>
+      <method name="getGod" line="19" NOP="0" FE="0" NOS="1" NLS="0" CC="1" NOL="1" LOCm="4"/>
+      <method name="getHandlerList" line="31" CC="1" NOS="1" LOCm="4" NLS="0" NOP="0" NOL="1"/>
+      <method name="getHandlers" line="27" CC="1" NOL="1" NOP="0" NOS="1" NLS="0" FE="0" LOCm="4"/>
+      <method name="getPlayer" line="23" NOL="1" NOP="0" LOCm="4" NLS="0" CC="1" NOS="1" FE="0"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.gods">
+    <type name="God" line="22" LCOMPFI="100" WMC="28" NOF="7" LCOMTC="130" LCOMCK="60" Ce="16" LCOMHS="93">
+      <method name="God" line="38" CC="3" NOL="3" FE="0" LOCm="17" NOP="2" NLS="0" NOS="16"/>
+      <method name="activatePower" line="96" NOP="1" NLS="0" CC="2" NOL="2" LOCm="7" NOS="8" FE="0"/>
+      <method name="addItem" line="139" FE="0" LOCm="4" NLS="0" CC="1" NOP="1" NOL="1" NOS="1"/>
+      <method name="equals" line="103" NLS="0" NOS="7" NOP="1" NOL="3" FE="0" LOCm="10" CC="3"/>
+      <method name="getCap" line="113" NOS="1" NOL="1" LOCm="4" FE="0" NOP="0" CC="1" NLS="0"/>
+      <method name="getChamp" line="63" NOL="1" FE="0" CC="1" NLS="0" NOS="1" LOCm="4" NOP="0"/>
+      <method name="getGodName" line="92" NLS="0" NOS="1" CC="1" NOL="1" FE="0" LOCm="4" NOP="0"/>
+      <method name="getGodType" line="55" NLS="0" LOCm="4" FE="0" CC="1" NOP="0" NOL="1" NOS="1"/>
+      <method name="getLastActivated" line="131" NOP="0" LOCm="4" CC="1" NLS="0" NOS="1" NOL="1" FE="0"/>
+      <method name="getThrone" line="71" NOP="0" CC="1" NOL="1" NLS="0" LOCm="4" FE="0" NOS="1"/>
+      <method name="hasChamp" line="59" FE="0" CC="2" LOCm="4" NOL="1" NOP="0" NOS="1" NLS="0"/>
+      <method name="hasThrone" line="75" NLS="0" LOCm="4" FE="0" NOS="1" NOP="0" CC="1" NOL="1"/>
+      <method name="isThrone" line="83" LOCm="5" NOP="1" CC="2" NOS="6" NOL="2" FE="0" NLS="0"/>
+      <method name="prayed" line="117" LOCm="14" NOS="26" NLS="0" NOL="3" CC="4" FE="0" NOP="1"/>
+      <method name="setChamp" line="67" FE="0" NOP="1" LOCm="4" NOS="1" CC="1" NLS="0" NOL="1"/>
+      <method name="setLastActivated" line="135" NLS="0" NOL="1" CC="1" NOS="1" FE="0" NOP="1" LOCm="4"/>
+      <method name="setName" line="88" NLS="0" NOS="1" NOL="1" FE="0" LOCm="4" CC="1" NOP="1"/>
+      <method name="setThrone" line="79" FE="0" LOCm="4" NOS="1" NOP="1" CC="1" NOL="1" NLS="0"/>
+    </type>
+    <type name="God.GodType" line="24" NOF="0" WMC="0" Ce="1">
+    </type>
+    <type name="God.GodType.DEATH" line="29" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="God.GodType.MINER" line="26" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="God.GodType.NATURE" line="27" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="God.GodType.WAR" line="28" NOF="0" Ce="1" WMC="0">
+    </type>
+    <type name="GodManager" line="31" NOF="0" WMC="26" Ce="16">
+      <method name="applyChamp" line="116" NLS="0" NOP="2" LOCm="7" CC="1" NOL="1" NOS="11"/>
+      <method name="getActiveGods" line="80" NLS="0" NOL="1" NOS="2" NOP="0" CC="1" LOCm="4"/>
+      <method name="getGod" line="88" LOCm="12" NOL="3" NLS="0" NOS="11" NOP="1" CC="3"/>
+      <method name="getGod" line="84" NOP="1" LOCm="4" NOL="1" NLS="0" CC="1" NOS="2"/>
+      <method name="getGodNameWhomImChamp" line="107" NOL="3" NLS="0" NOS="12" LOCm="9" CC="3" NOP="1"/>
+      <method name="godEvoked" line="60" LOCm="20" NLS="0" NOL="5" NOS="26" NOP="1" CC="6"/>
+      <method name="loadGod" line="34" LOCm="19" CC="7" NLS="0" NOP="1" NOS="25" NOL="3"/>
+      <method name="loadGods" line="53" NLS="0" NOL="2" LOCm="7" NOS="3" NOP="1" CC="2"/>
+      <method name="newChamp" line="100" NOL="2" NLS="0" NOP="1" LOCm="7" NOS="9" CC="2"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.gods.altar">
+    <type name="Altar" line="9" LCOMPFI="100" LCOMCK="24" LCOMHS="95" NOF="6" Ce="8" LCOMTC="130" WMC="12">
+      <method name="Altar" line="17" CC="2" NOL="2" NOS="16" FE="0" LOCm="14" NOP="5" NLS="0"/>
+      <method name="equals" line="51" NOS="8" NLS="0" CC="3" NOP="1" NOL="2" LOCm="13" FE="0"/>
+      <method name="getDBId" line="64" FE="0" NOL="1" NOS="1" CC="1" LOCm="4" NLS="0" NOP="0"/>
+      <method name="getGod" line="43" LOCm="4" CC="1" NOP="0" NOS="1" NOL="1" NLS="0" FE="0"/>
+      <method name="getLocation" line="39" NOP="0" NLS="0" NOS="1" FE="0" CC="1" NOL="1" LOCm="4"/>
+      <method name="getOwner" line="68" FE="0" NLS="0" NOS="1" NOP="0" LOCm="4" CC="1" NOL="1"/>
+      <method name="getType" line="47" NLS="0" NOS="1" FE="0" CC="1" NOL="1" NOP="0" LOCm="4"/>
+      <method name="mark" line="31" CC="1" NOP="0" NLS="0" FE="0" NOL="1" LOCm="4" NOS="1"/>
+      <method name="marked" line="35" NOL="1" LOCm="4" CC="1" NLS="0" FE="0" NOP="0" NOS="1"/>
+    </type>
+    <type name="AltarManager" line="22" WMC="38" NOF="0" Ce="18">
+      <method name="altarInteraction" line="37" LOCm="31" NOL="3" CC="7" NOS="28" NLS="0" NOP="3"/>
+      <method name="getAltar" line="27" NOL="3" NOS="11" CC="3" NLS="0" LOCm="10" NOP="1"/>
+      <method name="getAltars" line="125" NOS="2" NOL="1" CC="1" NLS="0" NOP="0" LOCm="4"/>
+      <method name="isAltar" line="150" LOCm="7" NOL="2" NLS="0" NOS="9" CC="3" NOP="1"/>
+      <method name="loadAltar" line="68" NOL="2" NLS="0" NOS="11" NOP="5" CC="2" LOCm="9"/>
+      <method name="newAltar" line="77" NLS="0" NOL="3" CC="17" NOP="4" NOS="81" LOCm="48"/>
+      <method name="removeAltar" line="129" NLS="0" NOP="2" NOL="5" CC="5" LOCm="21" NOS="22"/>
+    </type>
+    <type name="AltarType" line="3" WMC="0" NOF="0" Ce="1">
+    </type>
+    <type name="AltarType.HEAL" line="7" WMC="0" Ce="1" NOF="0">
+    </type>
+    <type name="AltarType.PRAY" line="6" Ce="1" WMC="0" NOF="0">
+    </type>
+    <type name="AltarType.THRONE" line="5" WMC="0" Ce="1" NOF="0">
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.gods.follower">
+    <type name="Follower" line="11" WMC="27" Ce="7" LCOMPFI="98" LCOMHS="93" NOF="8" LCOMCK="50" LCOMTC="138">
+      <method name="Follower" line="21" NLS="0" CC="1" FE="0" NOP="6" NOS="8" LOCm="11" NOL="1"/>
+      <method name="addReputation" line="55" FE="0" NLS="0" NOP="1" NOL="1" NOS="1" CC="1" LOCm="4"/>
+      <method name="deleteScoreboard" line="97" CC="1" FE="0" NOP="0" NLS="0" NOL="1" NOS="4" LOCm="5"/>
+      <method name="equals" line="83" NOP="1" NLS="0" CC="7" NOS="14" NOL="3" FE="0" LOCm="14"/>
+      <method name="getGod" line="71" LOCm="4" NOS="1" CC="1" FE="0" NOP="0" NLS="0" NOL="1"/>
+      <method name="getLastHealed" line="63" LOCm="4" NOL="1" NOS="1" NLS="0" NOP="0" CC="1" FE="0"/>
+      <method name="getLastPrayed" line="36" NOL="1" CC="1" NOP="0" FE="0" NOS="1" LOCm="4" NLS="0"/>
+      <method name="getPlayer" line="67" NOL="1" NLS="0" FE="0" CC="1" NOS="1" LOCm="4" NOP="0"/>
+      <method name="getPoints" line="44" NOP="0" CC="1" FE="0" NOS="1" LOCm="4" NOL="1" NLS="0"/>
+      <method name="getReputation" line="40" FE="0" NOL="1" NOS="1" NLS="0" CC="1" LOCm="4" NOP="0"/>
+      <method name="hasFixedReputation" line="115" FE="0" LOCm="4" NOP="0" NLS="0" NOL="1" CC="1" NOS="1"/>
+      <method name="hashCode" line="75" FE="0" LOCm="8" CC="2" NOL="1" NOP="0" NLS="0" NOS="7"/>
+      <method name="isPriest" line="123" LOCm="4" NOP="0" CC="1" FE="0" NOS="1" NOL="1" NLS="0"/>
+      <method name="removeRepuation" line="107" NLS="0" FE="0" CC="1" LOCm="4" NOS="1" NOP="1" NOL="1"/>
+      <method name="setFixedReputation" line="111" LOCm="4" NOS="1" FE="0" NLS="0" NOP="1" CC="1" NOL="1"/>
+      <method name="setLastHealed" line="59" CC="1" NOS="1" NOP="1" FE="0" LOCm="4" NLS="0" NOL="1"/>
+      <method name="setLastPrayed" line="32" NLS="0" FE="0" NOP="1" NOL="1" LOCm="4" NOS="1" CC="1"/>
+      <method name="setPoints" line="48" CC="1" FE="0" NOS="5" LOCm="7" NOP="1" NLS="0" NOL="1"/>
+      <method name="setPriest" line="119" NLS="0" NOS="1" NOL="1" LOCm="4" CC="1" FE="0" NOP="1"/>
+      <method name="toString" line="102" NOP="0" NLS="0" LOCm="5" NOL="1" FE="0" NOS="7" CC="1"/>
+    </type>
+    <type name="FollowerManager" line="33" Ce="20" WMC="61" NOF="0">
+      <method name="addFollower" line="61" NOS="30" CC="4" NOP="7" LOCm="20" NLS="0" NOL="3"/>
+      <method name="addReputation" line="40" NOS="24" NOP="2" CC="4" NLS="0" NOL="3" LOCm="17"/>
+      <method name="canInteract" line="173" CC="9" LOCm="25" NLS="0" NOS="33" NOL="3" NOP="2"/>
+      <method name="follows" line="109" LOCm="6" NLS="0" NOS="7" NOP="2" NOL="2" CC="3"/>
+      <method name="getFollower" line="36" LOCm="4" NOL="1" NOP="1" CC="1" NLS="0" NOS="3"/>
+      <method name="getGodFollowed" line="91" NOS="7" NLS="0" NOL="2" NOP="1" LOCm="5" CC="2"/>
+      <method name="getLastHeal" line="115" CC="1" NOP="1" NOL="1" LOCm="5" NOS="4" NLS="0"/>
+      <method name="getLastPray" line="120" NOS="3" LOCm="4" NLS="0" NOP="1" CC="1" NOL="1"/>
+      <method name="getNewChampCandidate" line="128" NOL="3" NLS="0" NOS="15" CC="3" LOCm="15" NOP="1"/>
+      <method name="getRemainingPoints" line="258" NOP="1" NOL="2" LOCm="6" NOS="8" CC="2" NLS="0"/>
+      <method name="getReputation" line="57" NOL="1" LOCm="4" NLS="0" NOP="1" CC="1" NOS="4"/>
+      <method name="getTotalFollowers" line="124" LOCm="4" NOL="1" NOS="2" NOP="0" NLS="0" CC="1"/>
+      <method name="hasFixedReputation" line="238" LOCm="4" NOL="1" NLS="0" NOS="3" NOP="1" CC="1"/>
+      <method name="heal" line="143" NOS="40" CC="11" LOCm="30" NLS="0" NOP="1" NOL="3"/>
+      <method name="isFollower" line="198" NOS="2" LOCm="4" NLS="0" NOL="1" NOP="1" CC="2"/>
+      <method name="pray" line="96" NOP="1" LOCm="13" NOL="2" NLS="0" CC="2" NOS="21"/>
+      <method name="removeFixedReputation" line="234" LOCm="4" NOL="1" NOP="1" NOS="2" NLS="0" CC="1"/>
+      <method name="removeFollower" line="81" NOL="2" LOCm="10" CC="2" NOP="2" NOS="11" NLS="0"/>
+      <method name="removeReputation" line="215" NOL="2" NOS="14" NOP="2" CC="2" NLS="0" LOCm="15"/>
+      <method name="saveFollower" line="202" NOS="12" NLS="0" NOL="2" NOP="1" LOCm="7" CC="2"/>
+      <method name="setFixedReputation" line="230" CC="1" NLS="0" NOP="1" NOS="2" LOCm="4" NOL="1"/>
+      <method name="setPriest" line="254" LOCm="4" CC="1" NOL="1" NOS="3" NLS="0" NOP="2"/>
+      <method name="updateReputationLevel" line="242" NOS="11" NLS="0" LOCm="12" NOL="2" NOP="2" CC="2"/>
+      <method name="updateScore" line="209" LOCm="6" NLS="0" CC="2" NOL="2" NOS="5" NOP="1"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.gods.types">
+    <type name="DeathGod" line="18" LCOMPFI="0" LCOMCK="0" WMC="31" LCOMTC="0" Ce="10" NOF="2" LCOMHS="0">
+      <method name="DeathGod" line="22" NLS="0" CC="1" FE="0" NOS="9" NOL="1" NOP="2" LOCm="7"/>
+      <method name="activatePower" line="75" LOCm="19" NOL="3" CC="3" FE="3" NOS="16" NLS="0" NOP="1"/>
+      <method name="onEntityDamageByEntityEvent" line="30" NLS="0" FE="0" LOCm="44" NOP="1" NOL="4" NOS="84" CC="27"/>
+    </type>
+    <type name="MinerGod" line="26" LCOMTC="0" LCOMPFI="0" LCOMHS="0" NOF="9" Ce="15" WMC="25" LCOMCK="0">
+      <method name="MinerGod" line="37" NLS="0" LOCm="14" CC="1" NOL="1" NOP="2" NOS="23" FE="0"/>
+      <method name="activatePower" line="79" LOCm="45" NOP="1" FE="3" NLS="0" NOS="45" NOL="6" CC="9"/>
+      <method name="onBlockBreakEvent" line="51" NOP="1" FE="0" LOCm="28" NOS="54" NOL="3" CC="15" NLS="0"/>
+    </type>
+    <type name="NatureGod" line="29" WMC="39" Ce="16" NOF="7" LCOMHS="0" LCOMTC="0" LCOMPFI="0" LCOMCK="0">
+      <method name="NatureGod" line="38" NLS="0" NOL="1" LOCm="13" CC="1" FE="0" NOP="2" NOS="19"/>
+      <method name="activatePower" line="82" NLS="0" FE="3" NOS="77" NOP="1" CC="18" NOL="6" LOCm="67"/>
+      <method name="onBlockBreakEvent" line="52" NOP="1" NOS="71" NOL="4" FE="0" CC="20" NLS="0" LOCm="30"/>
+    </type>
+    <type name="WarGod" line="18" Ce="10" NOF="0" WMC="21">
+      <method name="WarGod" line="20" LOCm="4" NOP="2" CC="1" FE="0" NLS="0" NOS="1" NOL="1"/>
+      <method name="activatePower" line="86" NOP="1" FE="3" NLS="0" NOS="11" CC="3" LOCm="15" NOL="3"/>
+      <method name="onCraftItem" line="24" FE="2" NOL="2" NOS="29" NOP="1" NLS="0" LOCm="17" CC="8"/>
+      <method name="onEnchantItem" line="41" LOCm="16" FE="2" NOP="1" NOS="18" NOL="2" NLS="0" CC="8"/>
+      <method name="onInventoryClick" line="57" NLS="0" NOP="1" NOS="0" NOL="1" FE="0" LOCm="29" CC="1"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.listener">
+    <type name="BlockListener" line="16" Ce="8" NOF="0" WMC="27">
+      <method name="onBlockBreak" line="55" FE="1" NLS="0" LOCm="21" NOS="16" NOL="2" CC="11" NOP="1"/>
+      <method name="onBlockPistonExtend" line="18" NOP="1" NOS="9" LOCm="14" NLS="0" NOL="2" FE="2" CC="3"/>
+      <method name="onBlockPlace" line="32" CC="13" NOS="18" FE="1" NLS="0" NOL="2" NOP="1" LOCm="23"/>
+    </type>
+    <type name="ChunkListener" line="10" Ce="4" WMC="3" NOF="0">
+      <method name="ChunkListener" line="12" FE="0" NOS="0" NOP="0" NOL="1" LOCm="4" CC="1" NLS="0"/>
+      <method name="onChunkLoad" line="16" NOP="1" NOS="2" LOCm="5" NOL="1" FE="1" CC="1" NLS="0"/>
+      <method name="onChunkUnload" line="21" NOL="1" NOS="2" FE="1" NOP="1" NLS="0" LOCm="5" CC="1"/>
+    </type>
+    <type name="LevelUpListener" line="15" WMC="8" Ce="6" NOF="0">
+      <method name="LevelUpListener" line="17" FE="0" LOCm="4" NOS="0" NOP="0" CC="1" NLS="0" NOL="1"/>
+      <method name="onLevelUpEvent" line="21" NOS="38" LOCm="30" NLS="0" CC="7" FE="3" NOP="1" NOL="4"/>
+    </type>
+    <type name="LockListener" line="20" WMC="11" Ce="12" NOF="0">
+      <method name="onBlockBreak" line="27" NOL="1" NOS="1" CC="1" FE="0" NOP="1" NLS="0" LOCm="5"/>
+      <method name="onBlockPistonExtend" line="59" NOP="1" FE="0" NOS="1" NLS="0" LOCm="4" CC="1" NOL="1"/>
+      <method name="onBlockPistonRetract" line="63" NOS="1" NOL="1" FE="0" NOP="1" LOCm="4" NLS="0" CC="1"/>
+      <method name="onBlockPlace" line="32" LOCm="5" NLS="0" CC="1" NOL="1" NOS="1" NOP="1" FE="0"/>
+      <method name="onEntityDamage" line="51" NOL="1" CC="1" LOCm="4" NOP="1" NOS="1" FE="0" NLS="0"/>
+      <method name="onPlayerInteract" line="38" NOS="1" LOCm="5" FE="0" NOP="1" NOL="1" CC="1" NLS="0"/>
+      <method name="onPlayerJoin" line="44" NLS="0" NOP="1" FE="2" NOL="2" LOCm="7" NOS="10" CC="2"/>
+      <method name="onPlayerMove" line="22" NOL="1" LOCm="5" CC="1" NLS="0" FE="0" NOS="1" NOP="1"/>
+      <method name="onPlayerTeleport" line="55" NOP="1" NOS="1" LOCm="4" NOL="1" CC="1" FE="0" NLS="0"/>
+      <method name="unregister" line="67" LOCm="11" CC="1" NOS="16" FE="0" NOL="1" NLS="0" NOP="0"/>
+    </type>
+    <type name="PlayerListener" line="14" Ce="5" WMC="4" NOF="0">
+      <method name="PlayerListener" line="16" NOP="0" CC="1" NLS="0" NOL="1" FE="0" LOCm="4" NOS="0"/>
+      <method name="onPlayerJoin" line="20" CC="2" NLS="0" NOP="1" LOCm="8" FE="5" NOL="2" NOS="19"/>
+      <method name="onPlayerQuit" line="28" FE="1" NOL="1" CC="1" NOS="2" NOP="1" LOCm="5" NLS="0"/>
+    </type>
+    <type name="SignListener" line="17" NOF="0" WMC="12" Ce="9">
+      <method name="SignListener" line="19" FE="0" NOS="0" NOP="0" NOL="1" NLS="0" CC="1" LOCm="4"/>
+      <method name="onBlockBreakEvent" line="41" NLS="0" CC="4" FE="2" NOS="19" NOL="4" LOCm="18" NOP="1"/>
+      <method name="onBlockPhysicsEvent" line="59" NOL="3" FE="1" NOS="11" NLS="0" CC="3" NOP="1" LOCm="10"/>
+      <method name="onPlayerInteract" line="23" FE="3" NOP="1" NOL="3" NOS="21" CC="4" LOCm="18" NLS="0"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.plugins">
+    <type name="PluginCheck" line="3" LCOMPFI="0" LCOMCK="0" Ce="2" NOF="1" WMC="2" LCOMHS="0" LCOMTC="0">
+      <method name="PluginCheck" line="6" NOP="1" NLS="0" NOL="1" CC="1" FE="0" LOCm="4" NOS="1"/>
+      <method name="isEnabled" line="10" LOCm="4" NLS="0" NOP="0" FE="0" NOS="1" CC="1" NOL="1"/>
+    </type>
+    <type name="PluginManager" line="9" NOF="0" Ce="2" WMC="1">
+      <method name="getTownyCheck" line="12" NOL="1" NLS="0" CC="1" NOS="1" NOP="0" LOCm="4"/>
+    </type>
+    <type name="TownyCheck" line="12" NOF="1" LCOMCK="0" LCOMHS="0" Ce="5" WMC="7" LCOMPFI="0" LCOMTC="0">
+      <method name="TownyCheck" line="15" NOP="1" FE="0" NLS="0" NOL="1" LOCm="4" CC="1" NOS="1"/>
+      <method name="canBreak" line="23" CC="4" LOCm="9" NLS="0" NOP="2" FE="0" NOL="2" NOS="13"/>
+      <method name="isMayor" line="32" FE="0" LOCm="5" NLS="0" NOS="1" NOP="1" NOL="1" CC="1"/>
+      <method name="isPriest" line="19" NOL="1" LOCm="4" CC="1" FE="0" NOS="1" NLS="0" NOP="1"/>
+    </type>
+    <type name="WorldGuardCheck" line="3" Ce="2" WMC="1" NOF="0">
+      <method name="WorldGuardCheck" line="6" NOP="1" CC="1" NOL="1" NOS="1" LOCm="4" FE="0" NLS="0"/>
+    </type>
+  </package>
+  <package name="me.elsifo92.gods.tasks">
+    <type name="HideTask" line="10" LCOMHS="0" NOF="2" WMC="3" LCOMTC="0" LCOMPFI="0" Ce="3" LCOMCK="0">
+      <method name="HideTask" line="14" FE="0" NOL="1" LOCm="5" NOS="2" NLS="0" CC="1" NOP="2"/>
+      <method name="run" line="19" NOP="0" NOL="2" NLS="0" FE="0" LOCm="4" NOS="3" CC="2"/>
+    </type>
+    <type name="ModifyBlockTask" line="9" Ce="4" LCOMHS="0" WMC="2" LCOMCK="0" NOF="3" LCOMTC="0" LCOMPFI="0">
+      <method name="ModifyBlockTask" line="14" FE="0" NOP="3" CC="1" NOS="3" NLS="0" NOL="1" LOCm="6"/>
+      <method name="run" line="20" NLS="0" NOP="0" LOCm="4" NOS="1" FE="0" CC="1" NOL="1"/>
+    </type>
+  </package>
+</metrics>

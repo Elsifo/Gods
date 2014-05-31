@@ -1,0 +1,26 @@
+name: GodsCraft
+main: me.elsifo92.gods.GodsCraft
+version: 1.2pre
+depend: [PermissionsEx]
+author: Elsifo92
+database: true
+commands:
+   gods:
+      description: Gods.
+      usage: /gods [evoke|reputation|unfollow]
+permissions:
+    gods.admin:
+      description: Da accesso a tutti i permessi di Gods
+    gods.throne.create:
+      description: Permette di creare un trono
+    gods.throne.delete:
+      description: Permette di eliminare un trono
+    gods.check.altar:
+      description: Permette di verificare se un altare e' valido
+    gods.check.blocks:
+      description: Permette di verificare se un blocco e' naturale
+    gods.reputation.modify:
+      description: Permette di aumentare la reputazione
+    gods.lock:
+      description: Permette di lockare il plugin e di ricaricarlo
+build: 54

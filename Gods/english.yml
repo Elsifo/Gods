@@ -1,0 +1,44 @@
+msg:
+  console:
+    load:
+      first: "Loading god "
+      second: ", type: "
+  error:
+    failsafe: "GodsCraft couldn't load necessary data, so now it's in FAILSAFE MODE. If this is the first time you boot up your server with this plugin, it's normal: just run the command /gods install (requires gods.admin permission) and follow the steps in order to complete the installation of the plugin. Otherwise, check carefully your config.yml file, and then run /gods reload to attempt to resolve any problem."
+    failsafen: "GodsCraft must be in FAILSAFE mode in order to reload"
+  gods:
+    pray: "Thanks for your pray"
+    heal: " healed you"
+    gift: " made you a gift"
+    power:
+      activate: "You've activated the power of "
+      cooldown: " is charging his powers"
+    champ:
+      new: " is the new champ of "
+      noone: " no longer has a champ"
+    nulltop: "No data to show"
+    gift: " made you a gift"
+  followers:
+    new: "You now follow "
+    already: "You already follow "
+    loadfail: "GodsCraft wasn't able to load your data. Log out and log in again to attempt solving this problem. If you see this message again, please contact your server administrator"
+    priestfail: "Only a priest can excecute this command"
+    reputation:
+      raise: "You've raised your reputation with "
+      lower: "Reputation lowered" 
+  altars:
+    noone: "God name specified not valid"
+    ner: "Reputation not sufficient to create this type of altar"
+    create: "Altar succefully created"
+    deny: "You can't interact with this altar"
+    already: "This is already an altar"
+    failnew: 
+      first: "Altar creation failed: "
+      secondt: " already has a throne"
+      secondnot: " doesn't have a throne"
+    break: "You can't break an altar"
+  misc:
+    dbcreatefail: "You have to specify a db name"
+    priestfail: "You're not a town major"
+    permfail: "Insufficient permissions"
+    reload: "Reloading"

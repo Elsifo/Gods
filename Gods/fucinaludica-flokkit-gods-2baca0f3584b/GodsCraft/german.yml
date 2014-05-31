@@ -1,0 +1,38 @@
+msg:
+  console:
+    load:
+      first: "Caricamento del dio "
+      second: ", tipo: "
+  error:
+    failsafe: "GodsCraft non £ riuscito a caricare i dati necessari, cos£ ora £ in modalit£ FAILSAFE. Se questa £ la prima volta che avvii il serve con questo plugin, £ normale: invia il comando /gods install (richiede il permesso gods.admin) e segui i passaggi per completarne l'installazione. Altrimenti, controlla attentamente il file config.yml e poi esegui /gods reload per cercare di risolvere il problema."
+  gods:
+    pray: "Grazie per la tua preghiera"
+    heal: " ti ha curato"
+    power:
+      activate: "Hai attivato il potere di "
+      cooldown: " sta caricando i suoi poteri"
+    champ:
+	  new: " £ il nuovo campione di "
+      noone: " non ha pi£ un campione"
+    nulltop: "Nessun dato da visualizzare"
+    gift: " ti ha fatto un dono"
+  followers:
+    new: "Ora segui "
+	loadfail: "GodsCraft non £ riuscito a caricare i tuoi dati. Slogga e rilogga per tentare di risolvere il problema. Se vedi nuovamente questo messaggio, contatta l'amministratore del server"
+    priestfail: "Solo unh prete pu£ eseguire questo comando"
+    reputation:
+      raise: "Hai aumentato la reputazione presso "
+      lower: "Reputazione ridotta" 
+  altars:
+    deny: "Non puoi interagire con questo altare"
+    already: "Questo £ gi£ un altare"
+    failnew: 
+      first: "Creazione dell'altare fallita: "
+      secondt: " ha gi£ un trono"
+      secondnot: " non ha un trono"
+    break: "Non puoi rompere un altare"
+  misc:
+    dbcreatefail: "Devi specificare il nome del database"
+    priestfail: "Non sei il sindaco di una citt£"
+    permfail: "Permessi insufficienti"
+    reload: "Ricaricamento"

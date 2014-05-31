@@ -1,0 +1,76 @@
+mysql:
+  host: jdbc:mysql://localhost:3306
+  user: root
+  pass: 
+  dbname:
+  
+gods:
+  miner:
+    activated: false
+    name:
+    cap:
+    item:
+  nature:
+    activated: false
+    name: 
+    cap:
+    item:
+  war: 
+    activated: false
+    name:    
+    cap: 
+    item:
+  death:
+    activated: false
+    name:
+    cap:
+    item:
+exp:
+  death:
+    hit:
+      player: 5
+      mob: 1
+  miner:
+    stone: 5
+    coal: 100
+    iron: 150
+    quartz: 175
+    redstone: 175
+    gold: 200
+    lapis: 225
+    diamond: 250
+    emerald: 275
+  nature:
+    crops: 10
+    potato: 10
+    carrot: 10
+    sugarcane: 10
+    pumpkin: 10
+    melon: 10
+    shrooms: 10
+  war:
+    helmet:
+      craft:
+        encant:
+        repair:
+    chestplate:
+      craft:
+      enchant:
+      repair:
+    leggins:
+      craft:
+      enchant:
+      repair:
+    boots:
+      craft:
+      enchant:
+      repair:
+    sword:
+      craft:
+      enchant:
+      repair:
+
+misc:
+  level-sound: true
+  lang: E
+  version: #DON'T MODIFY MANUALLY THIS VALUE! FUTURE UPDATES MAY CAUSE DATA LOSSES IF MODIFIED!
