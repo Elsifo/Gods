@@ -1,8 +1,8 @@
 name: GodsCraft
 main: me.elsifo92.gods.GodsCraft
-version: ALPHA
+version: 1.0pre-2
 depend: [PermissionsEx]
-author: Elsifo92
+author: Elsifo
 database: true
 commands:
    gods:
